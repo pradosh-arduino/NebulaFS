@@ -1,5 +1,36 @@
 ﻿using System;
 
+struct NebulaFileSystemEntry
+{
+    UInt64 FileSize;
+    UInt64 DataOffset; // offset from the end of the fs header that points to the start of the file data
+}
+
+struct NebulaFileSystemHeader
+{
+    private Dictionary<string,NebulaFileSystemEntry> FileDescriptors;
+    private string Signature;
+    private UInt64 FileCount;
+
+    public NebulaFileSystemHeader()
+    {
+        // idk, read the signature and compare it with "NBFS"
+        // read from somewhere
+    }
+
+    public void AddFile(string name, string path)
+    {
+        // this should just add a file from the user's drive to the fs
+        // offsets should be calculated once all files have been added
+    }
+
+    public void Save(string path)
+    {
+        // 1. calculate file offsets
+        // 2. write everything to the file at `path`
+    }
+}
+
 class Logging{
     public static void done(string message){
         Console.WriteLine("\x1b[92m[Done] " + message + "\x1b[0m");
