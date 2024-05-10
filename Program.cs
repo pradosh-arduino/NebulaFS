@@ -80,6 +80,8 @@ class Nebula{
             case "quit":
                 Environment.Exit(0);
                 break; // WHY DOTNET? 
+            case "":
+                break;
             default:
                 Logging.error("Unknown command - " + command);
                 break; // WHY DOTNET?
