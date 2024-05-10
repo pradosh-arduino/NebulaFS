@@ -1,0 +1,15 @@
+/home/pradosh/Desktop/NebulaFS/obj/Debug/net7.0/NebulaFS.csproj.AssemblyReference.cache
+/home/pradosh/Desktop/NebulaFS/obj/Debug/net7.0/NebulaFS.GeneratedMSBuildEditorConfig.editorconfig
+/home/pradosh/Desktop/NebulaFS/obj/Debug/net7.0/NebulaFS.AssemblyInfoInputs.cache
+/home/pradosh/Desktop/NebulaFS/obj/Debug/net7.0/NebulaFS.AssemblyInfo.cs
+/home/pradosh/Desktop/NebulaFS/obj/Debug/net7.0/NebulaFS.csproj.CoreCompileInputs.cache
+/home/pradosh/Desktop/NebulaFS/bin/Debug/net7.0/NebulaFS
+/home/pradosh/Desktop/NebulaFS/bin/Debug/net7.0/NebulaFS.deps.json
+/home/pradosh/Desktop/NebulaFS/bin/Debug/net7.0/NebulaFS.runtimeconfig.json
+/home/pradosh/Desktop/NebulaFS/bin/Debug/net7.0/NebulaFS.dll
+/home/pradosh/Desktop/NebulaFS/bin/Debug/net7.0/NebulaFS.pdb
+/home/pradosh/Desktop/NebulaFS/obj/Debug/net7.0/NebulaFS.dll
+/home/pradosh/Desktop/NebulaFS/obj/Debug/net7.0/refint/NebulaFS.dll
+/home/pradosh/Desktop/NebulaFS/obj/Debug/net7.0/NebulaFS.pdb
+/home/pradosh/Desktop/NebulaFS/obj/Debug/net7.0/NebulaFS.genruntimeconfig.cache
+/home/pradosh/Desktop/NebulaFS/obj/Debug/net7.0/ref/NebulaFS.dll
