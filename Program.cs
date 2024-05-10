@@ -1,6 +1,9 @@
 ﻿using System;
 
 class Logging{
+    public static void done(string message){
+        Console.WriteLine("\x1b[92m[Done] " + message + "\x1b[0m");
+    }
     public static void info(string message){
         Console.WriteLine("\x1b[94m[Info] " + message + "\x1b[0m");
     }
