@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Text;
 
 struct NebulaFileSystemEntry
 {
@@ -49,7 +51,38 @@ class Logging{
 class Nebula{
     public static void Main(string[] args){
         Nebula self = new Nebula();
-        
-        Logging.warn("Test warn!");
+        Console.Clear();
+        while(true){
+            Console.Write(">> ");
+            string command = Console.ReadLine();
+            self.handle_commands(command);
+        }
+    }
+
+    byte[] to_bytes(string str){
+        return Encoding.ASCII.GetBytes(str);
+    }
+
+    void handle_commands(string command){
+        switch(command){
+            case "init":
+                using (FileStream fs = File.Open("./disk.img", FileMode.Create))
+                {
+                    using (BinaryWriter writer = new BinaryWriter(fs))
+                    {
+                        writer.Write(to_bytes("NBFS"));
+                        writer.Write((UInt64)0);
+                        writer.Write(to_bytes("\0"));
+                        writer.Write(to_bytes("\0"));
+                    }
+                }
+                break;
+            case "quit":
+                Environment.Exit(0);
+                break; // WHY DOTNET? 
+            default:
+                Logging.error("Unknown command - " + command);
+                break; // WHY DOTNET?
+        }
     }
 }
